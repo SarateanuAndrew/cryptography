@@ -68,7 +68,7 @@ public class Main {
             chars.add(ch);
         }
         List<Character> alphabetList = getAlphabetList();
-        var keyWordList = new ArrayList<>();
+        List<Character> keyWordList = new ArrayList<>();
         List<Character> keyWordRemove = new ArrayList<>();
         char[] charArray = word.toUpperCase().replaceAll(" ", "").toCharArray();
         for (char ch : charArray) {
@@ -78,7 +78,6 @@ public class Main {
             keyWordRemove.add(ch);
         }
         keyWordRemove.forEach(alphabetList::remove);
-        System.out.println(keyWordRemove);
         alphabetList.addAll(0, keyWordRemove.stream().distinct().toList());
         alphabetList.forEach(System.out::print);
         System.out.println();
