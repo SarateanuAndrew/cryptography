@@ -69,6 +69,7 @@ public class Main {
                 .replaceAll("Y", "x")
                 .replaceAll("E", "j")
                 .replaceAll("M", "z")
-                .replaceAll("B", "q");
+                .replaceAll("B", "q")
+                ;
     }
 }   
